@@ -1,0 +1,198 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 10px;
+  padding-left: 42px;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 2px 40px;
+  padding-bottom: 0px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.navbar-text .atas {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.navbar-text .bawah {
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.qr-img {
+  width: 75%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.actions a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #007bff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+#btnBackToTop {
+    display: none; /* Sembunyikan tombol secara default */
+    position: fixed; /* Posisikan tombol secara tetap di layar */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 30px; /* Jarak dari kanan */
+    z-index: 99; /* Pastikan tombol di atas elemen lain */
+    border: none; /* Hapus border */
+    outline: none; /* Hapus outline saat fokus */
+    background-color: #007bff; /* Warna latar belakang */
+    opacity: 60%;
+    color: white; /* Warna teks */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 18px; /* Ukuran font */
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+#btnBackToTop:hover {
+    background-color: #0056b3; /* Warna latar belakang saat di-hover */
+}
